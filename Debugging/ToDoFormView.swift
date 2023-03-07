@@ -47,6 +47,7 @@ extension ToDoFormView {
                         date: viewModel.date,
                         isCompleted: viewModel.isCompleted)
         dataStorage.updateToDo(toDo: toDo)
+        dataStorage.actionCount += 1
         dismiss()
     }
     
@@ -55,6 +56,7 @@ extension ToDoFormView {
                            description: viewModel.descriptionText,
                            date: viewModel.date)
         dataStorage.addToDo(toDo: newToDo)
+        dataStorage.actionCount += 1
         dismiss()
     }
     

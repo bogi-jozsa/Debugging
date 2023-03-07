@@ -13,13 +13,15 @@ class DataStore: ObservableObject {
     
     let savePath = FileManager.documentsDirectory.appendingPathComponent("ToDos.txt")
     
+    var actionCount: Int = 0
+    
     init() {
         //for shell script:
 //        let toDoPath: String = savePath.path
         
         loadToDos()
         
-        //for e.g.
+        //for conditional e.g.
 //        insertPredefinedValues()
     }
     
@@ -82,6 +84,7 @@ class DataStore: ObservableObject {
 extension FileManager {
     static var documentsDirectory: URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+//        print(paths[0])
         return paths[0]
     }
 }

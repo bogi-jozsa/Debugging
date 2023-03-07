@@ -1,15 +1,15 @@
 {
     "items": [
         {
-            "titlee": "To-Do 1 FORCE",
+            "titlee": "To-Do 1",
             "description": "This is the description"
         },
         {
-            "title": "To-Do 2 - FORCE",
+            "title": "To-Do 2",
             "description": "Visit my grandparents"
         },
         {
-            "title": "To-Do 3 - FORCE",
+            "title": "To-Do 3",
             "description": "Description3"
         }
     ]
