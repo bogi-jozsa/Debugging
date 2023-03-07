@@ -50,8 +50,8 @@ struct ContentView: View {
         }
 //        .onAppear {
 //            let helloWorld = "Hello World"
-////            let width = helloWorld.size(withAttributes: [.font: Font.system(size: 16.0)])
-//            let width = helloWorld.size(withAttributes: [.font: UIFont.systemFont(ofSize: 16.0)])
+//            let width = helloWorld.size(withAttributes: [.font: Font.system(size: 16.0)])
+////            let width = helloWorld.size(withAttributes: [.font: UIFont.systemFont(ofSize: 16.0)])
 //            print("\(width)")
 //        }
     }
