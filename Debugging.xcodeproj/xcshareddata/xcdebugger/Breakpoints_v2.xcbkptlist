@@ -3,4 +3,155 @@
    uuid = "91D948AD-D6E1-4814-9967-B329B5229103"
    type = "4"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "37222F08-1B72-4386-BDA0-A099A84D975C"
+            shouldBeEnabled = "Yes"
+            nameForDebugger = "Logging-breakpoint"
+            ignoreCount = "0"
+            continueAfterRunningActions = "Yes"
+            filePath = "Debugging/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Actions>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.Log">
+                  <ActionContent
+                     message = "@toDo.title@ - @toDo.date@"
+                     conveyanceType = "0">
+                  </ActionContent>
+               </BreakpointActionProxy>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.Log">
+                  <ActionContent
+                     message = "%B was hit %H times"
+                     conveyanceType = "0">
+                  </ActionContent>
+               </BreakpointActionProxy>
+            </Actions>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8568D966-CB80-4789-AD05-54693424D3EE"
+            shouldBeEnabled = "Yes"
+            nameForDebugger = "Executional-breakpoint"
+            ignoreCount = "0"
+            continueAfterRunningActions = "Yes"
+            filePath = "Debugging/DataStore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "init()"
+            landmarkType = "7">
+            <Actions>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.ShellCommand">
+                  <ActionContent
+                     command = "/Users/wolfpackdigital/Desktop/Debugging/Debugging/delete_local_db_script.sh"
+                     arguments = "@toDoPath@"
+                     waitUntilDone = "YES">
+                  </ActionContent>
+               </BreakpointActionProxy>
+            </Actions>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E8E2A470-DA08-43AD-8E18-5018599FE050"
+            shouldBeEnabled = "Yes"
+            nameForDebugger = "Conditional-breakpoint"
+            condition = "title == &quot;&quot;"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Debugging/DataStore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "insertPredefinedValues()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            uuid = "118ECF29-0669-41D2-96D3-14122D1F3A0F"
+            shouldBeEnabled = "Yes"
+            nameForDebugger = "Exception-breakpoint"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            breakpointStackSelectionBehavior = "1"
+            scope = "0"
+            stopOnStyle = "0">
+            <Actions>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
+                  <ActionContent
+                     consoleCommand = "po $rax">
+                  </ActionContent>
+               </BreakpointActionProxy>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
+                  <ActionContent
+                     consoleCommand = "bt">
+                  </ActionContent>
+               </BreakpointActionProxy>
+            </Actions>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
+         <BreakpointContent
+            uuid = "1ADBC4A2-16E4-4299-A13D-0A34780AF684"
+            shouldBeEnabled = "Yes"
+            nameForDebugger = "Symbolic-breakpoint"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = "updateToDo"
+            moduleName = "">
+            <Locations>
+               <Location
+                  uuid = "1ADBC4A2-16E4-4299-A13D-0A34780AF684 - 6064855286d2bfec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Debugging.DataStore.updateToDo(toDo: Debugging.ToDo) -&gt; ()"
+                  moduleName = "Debugging"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wolfpackdigital/Desktop/Debugging/Debugging/DataStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "129">
+               </Location>
+               <Location
+                  uuid = "1ADBC4A2-16E4-4299-A13D-0A34780AF684 - b488a374648918f7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Debugging.ToDoFormView.updateToDo() -&gt; ()"
+                  moduleName = "Debugging"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wolfpackdigital/Desktop/Debugging/Debugging/ToDoFormView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "311">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

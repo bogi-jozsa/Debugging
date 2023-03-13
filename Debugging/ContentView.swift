@@ -27,7 +27,7 @@ struct ContentView: View {
                                         .font(.caption)
                                         .tint(Color.black)
                                 }
-//                                .background(toDo.date > getTodaysDate() ? .yellow : .clear)
+                                .background(toDo.date > getTodaysDate() ? .yellow : .clear)
                             })
                         }
                         .onDelete(perform: dataStorage.deleteToDo)
@@ -51,6 +51,7 @@ struct ContentView: View {
 //        .onAppear {
 //            let helloWorld = "Hello World"
 //            let width = helloWorld.size(withAttributes: [.font: Font.system(size: 16.0)])
+////            Correct:
 ////            let width = helloWorld.size(withAttributes: [.font: UIFont.systemFont(ofSize: 16.0)])
 //            print("\(width)")
 //        }

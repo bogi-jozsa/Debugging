@@ -17,12 +17,12 @@ class DataStore: ObservableObject {
     
     init() {
         //for shell script:
-//        let toDoPath: String = savePath.path
+        let toDoPath: String = savePath.path
         
         loadToDos()
         
         //for conditional e.g.
-//        insertPredefinedValues()
+        insertPredefinedValues()
     }
     
     func loadToDos() -> Void {
